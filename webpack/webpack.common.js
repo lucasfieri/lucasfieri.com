@@ -4,9 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: {
-    app: Path.resolve(__dirname, '../src/scripts/index.js')
-  },
+  entry: Path.resolve(__dirname, '../src/scripts/', 'index.js'),
   output: {
     path: Path.join(__dirname, '../build'),
     filename: 'js/[name].js'

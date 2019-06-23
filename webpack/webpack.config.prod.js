@@ -19,7 +19,7 @@ module.exports = merge(common, {
     }),
     new Webpack.optimize.ModuleConcatenationPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'bundle.css'
+      filename: 'index.css'
     })
   ],
   module: {
@@ -30,7 +30,7 @@ module.exports = merge(common, {
         use: 'babel-loader'
       },
       {
-        test: /\.s?css/i,
+        test: /\.s(a|c)ss/i,
         use : [
           MiniCssExtractPlugin.loader,
           'css-loader',

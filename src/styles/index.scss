@@ -1,5 +1,13 @@
+@import './fonts';
 $body-color: blue;
 
-body {
-  color: $body-color;
+
+.footer {
+  .footer__navbar {
+    .footer__navbar__list {
+      .footer__navbar__list__item {
+        font-family: 'DIN-Condensed-Bold';
+      }
+    }
+  }
 }
