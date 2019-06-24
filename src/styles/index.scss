@@ -1,9 +1,10 @@
-@import './reset';
-@import './fonts';
-@import './variables';
+@import './structure';
 
 .footer {
+  display: flex;
+  flex-direction: column;
   .footer__navbar {
+    margin: 0 25vw;
     .footer__navbar__list {
         display: flex;
         flex-direction: row;
@@ -11,11 +12,15 @@
       .footer__navbar__list__item {
         text-transform: uppercase;
         list-style: none;
-        font-family: 'DIN-Condensed-Bold';
         a {
           text-decoration: none;
+          color: $primary-color;
         }
       }
     }
+  }
+  .footer_copy {
+    margin-left: auto; 
+    font-size: .5em;
   }
 }

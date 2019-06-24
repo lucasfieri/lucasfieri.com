@@ -1,0 +1,18 @@
+@import './reset';
+@import './fonts';
+@import './variables';
+
+body {
+  overflow: hidden;
+  font-family: 'DIN-Condensed-Bold';
+  font-size: $font-size-primary;
+  color: $primary-color;
+  padding: 1rem;
+  background-color: $bg-color;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: calc(16px + (8/1366) * 100vw);
+  }
+}
