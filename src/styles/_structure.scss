@@ -16,3 +16,17 @@ body {
     font-size: calc(16px + (8/1366) * 100vw);
   }
 }
+@media screen and (max-width: 1360px) {
+  body {
+    overflow: auto;
+  }
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
