@@ -51,12 +51,17 @@ body {
       margin: auto;
       border-bottom: solid 2px white;
     }
-    @media screen and (max-width: 800px) {
-      .home__social-list {
-        padding: 0 0 20px 0;
-      }
-    }
   }
+}
+
+@media screen and (max-width: 700px) {
+  .home__social-list {
+    padding: 0 0 20px 0!important;
+  }
+  .container {
+    width: 85%!important;
+  }
+
 }
 
 
