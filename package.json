@@ -30,9 +30,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node next.server.js",
-    "build": "next build src",
+    "build": "next build",
     "dev": "nodemon ./next.server.js",
-    "dev:api": "nodemon ./server/_server.only.js"
+    "dev:api": "nodemon ./server/_server.only.js",
+    "export": "npm run build && next export"
   },
   "repository": {
     "type": "git",
