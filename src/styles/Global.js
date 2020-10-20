@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     }
   };
   body {
-    font-family: 'Roboto'
+    font-family: 'Raleway', sans-serif;
   }
 `;
 
