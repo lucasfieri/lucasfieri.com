@@ -1,26 +1,28 @@
-import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import GlobalStyle from './Global';
+import { darken } from 'polished'
 
-const theme = {
-  main: {
-    colors: {
-      primary: {
-      },
-    },
-    fontSizes: {
+export const lightTheme = {
+  colors: {
+    background: {
+      primary: '#0071bc',
+      secondary: '#00a99d',
+      darkPrimary: darken(0.2, primary),
+      darkSecondary: darken(0.2, secondary)
+    }
+  },
+  sizes: {
+    font: {
       small: '1em',
       medium: '2em',
       large: '3em'
-    }
+    },
   }
 }
 
-const Theme= ({ children }) => (
-  <>
-    <GlobalStyle />
-    <ThemeProvider theme={theme}>{ children }</ThemeProvider>
-  </>
+const Theme = ({ children }) => (
+  <ThemeProvider theme={lightTheme}>
+    {children}
+  </ThemeProvider>
 );
 
 export default Theme;
