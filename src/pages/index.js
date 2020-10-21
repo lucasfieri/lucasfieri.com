@@ -5,7 +5,6 @@ const Index = () => {
     <>
       <Head title="Lucas Fieri" />
       <main>
-        <h1>Inhai gay</h1>
       </main>
     </>
   )
