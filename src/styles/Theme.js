@@ -6,8 +6,15 @@ export const lightTheme = {
     background: {
       primary: '#0071bc',
       secondary: '#00a99d',
-      darkPrimary: darken(0.2, primary),
-      darkSecondary: darken(0.2, secondary)
+      get darkPrimary() {
+        return darken(0.2, this.primary)
+      },
+      get darkSecondary() {
+        return darken(0.2, this.secondary)
+      },
+    },
+    button: {
+      navbar: '#2E3192'
     }
   },
   sizes: {
